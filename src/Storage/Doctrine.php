@@ -58,4 +58,12 @@ class Doctrine implements StorageInterface
     {
         $this->className = $className;
     }
+
+    /**
+     * @return UserInterface[]
+     */
+    public function getAll()
+    {
+        return $this->getRepository()->findAll();
+    }
 }

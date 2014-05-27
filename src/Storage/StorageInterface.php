@@ -19,4 +19,9 @@ interface StorageInterface
      * @return UserInterface
      */
     public function loadByIdentity($identity);
+
+    /**
+     * @return UserInterface[]
+     */
+    public function getAll();
 }

@@ -22,4 +22,9 @@ interface UserInterface
      * @return string
      */
     public function getCredential();
+
+    /**
+     * @return string
+     */
+    public function getIdentity();
 }

@@ -44,4 +44,12 @@ class User implements UserInterface
     {
         return $this->credential;
     }
+
+    /**
+     * @return string
+     */
+    public function getIdentity()
+    {
+        return $this->identity;
+    }
 }
