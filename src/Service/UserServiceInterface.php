@@ -13,4 +13,12 @@ interface UserServiceInterface
      * @return UserInterface
      */
     public function register($identity, $credential);
+
+    /**
+     * @param UserInterface $user
+     * @param string        $credential
+     *
+     * @return void
+     */
+    public function setCredential(UserInterface $user, $credential);
 }

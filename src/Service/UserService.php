@@ -42,4 +42,15 @@ class UserService implements UserServiceInterface
         $this->storage->save($user);
         return $user;
     }
+
+    /**
+     * @param UserInterface $user
+     * @param string        $credential
+     *
+     * @return void
+     */
+    public function setCredential(UserInterface $user, $credential)
+    {
+        $user->setCredential($this->cryptoService->create($credential));
+    }
 }
