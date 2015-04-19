@@ -52,4 +52,12 @@ class User implements UserInterface
     {
         return $this->identity;
     }
+
+    /**
+     * @return string
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 }
